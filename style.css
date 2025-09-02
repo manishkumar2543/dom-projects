@@ -2,53 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 body,html{
     height: 100%;
     width: 100%;
+
 }
-.page1{
-    height: 100%;
+.string{
+    height: 200px;
     width: 100%;
-    background-color: #70e9db;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page2{
-    height: 100%;
-    width: 100%;
-    background-color: #d0f17a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-}
-.page3{
-    height: 100%;
-    width: 100%;
-    background-color: #2cf888;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box{
-    height: 300px;
-    width: 300px;
-    background-color: red;
-}
-h2{
-    background: rgb(232, 176, 10);
-    position: relative;
-    font-size: 50px;
-    padding: 10px;  
+    background-color: rgb(255, 55, 0);
+
 }
 
-h1{
-    background: red;
-    position: relative;
-    font-size: 50px;
-      padding: 10px;  
-}
