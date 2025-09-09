@@ -1,28 +1,28 @@
-var main=document.querySelector('.main');
-var cursor=document.querySelector('.cursor');
-var imgDiv=document.querySelector(`.image`)
+var menu=document.querySelector(".nav i");
+var cross= document.querySelector(".full i");
 
-main.addEventListener("mousemove",function(dets){
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        ease: "back.out",
-        duration: 0.5,
-        
-    })
+
+
+var tl=gsap.timeline();
+
+tl.to(".full",{
+    right: "0",
+    duration:0.6,
 })
-
-imgDiv.addEventListener("mouseenter",function(){
-    cursor.innerHTML="View More",
-    gsap.to(cursor,{
-        
-        scale:4,
-
-    })
+tl.from(".full h4",{
+    x: "150",
+    duration:0.8,
+    stagger:0.3,
+    opacity:0,
 })
-imgDiv.addEventListener("mouseleave",function(){
-    cursor.innerHTML=""
-    gsap.to(cursor,{
-        scale:1,
-    })
+tl.from(".full i",{
+    opacity:0,
+})
+tl.pause()
+
+menu.addEventListener("click",function(){
+    tl.play()
+})
+cross.addEventListener("click",function(){
+    tl.reverse()
 })
